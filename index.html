@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Turismo</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Bem-vindo à Agência de Turismo</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Início</a></li>
+                <li><a href="#busca">Busca</a></li>
+                <li><a href="#guias">Perfis de Guias</a></li>
+                <li><a href="/guias.html">Perfis de Tours</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="/quem_somos.html">Quem Somos</a></li>
+                <li><a href="/loguin.html">Loguin</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Página Inicial -->
+    <section id="home">
+        <div class="banner">
+            <h2>Explore o Mundo com os Melhores Guias!</h2>
+            <p>Encontre tours personalizados, guias especializados e viva experiências inesquecíveis.</p>
+        </div>
+    </section>
+
+    <!-- Página de Busca -->
+    <section id="busca">
+        <h2>Encontre seu Guia Ideal</h2>
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Digite o nome do guia, cidade, idioma...">
+            <button type="submit">Buscar</button>
+        </form>
+        <div id="searchResults"></div>
+    </section>
+
+    <!-- Perfis de Guias -->
+    <section id="guias">
+        <h2>Nossos Guias</h2>
+        <div class="guia-perfil">
+            <img src="guia.jpg" alt="Guia 1">
+            <h3>João Silva</h3>
+            <p>Especialidade: História, Cultura</p>
+            <p>Idioma: Português, Inglês</p>
+            <button>Ver Perfil</button>
+        </div>
+        <!-- Para a gente adicionar mais perfis de guias conforme necessário -->
+    </section>
+
+    <!-- Perfis de Tours -->
+    <section id="tours">
+        <h2>Nossos Tours</h2>
+        <div class="tour-perfil">
+            <img src="tour.jpg" alt="Tour 1">
+            <h3>Tour Histórico pelo Centro da Cidade</h3>
+            <p>Duração: 4 horas</p>
+            <p>Preço: R$ 100,00</p>
+            <button>Reservar</button>
+        </div>
+        <!-- Adicione mais perfis de tours conforme necessário -->
+    </section>
+
+    <!-- Sistema de Reservas -->
+    <section id="reservas">
+        <h2>Faça sua Reserva</h2>
+        <form id="reservaForm">
+            <input type="text" placeholder="Nome">
+            <input type="email" placeholder="E-mail">
+            <input type="date" placeholder="Data do Tour">
+            <button type="submit">Reservar Agora</button>
+        </form>
+    </section>
+
+    <!-- Sistema de Pagamento -->
+    <section id="pagamento">
+        <h2>Pague Seu Tour</h2>
+        <form id="paymentForm">
+            <input type="text" placeholder="Número do Cartão">
+            <input type="text" placeholder="Nome no Cartão">
+            <input type="text" placeholder="Data de Validade">
+            <input type="text" placeholder="CVV">
+            <button type="submit">Pagar Agora</button>
+        </form>
+    </section>
+
+    <!-- Sistema de Avaliações -->
+    <section id="avaliacoes">
+        <h2>Avaliações</h2>
+        <div class="avaliacao">
+            <p><strong>João:</strong> O guia foi excelente!</p>
+            <p>⭐⭐⭐⭐⭐</p>
+        </div>
+        <!-- Adicione mais avaliações conforme necessário -->
+    </section>
+
+    <!-- Blog -->
+    <section id="blog">
+        <h2>Nosso Blog</h2>
+        <article>
+            <h3>Melhores Destinos de 2024</h3>
+            <p>Descubra os melhores lugares para viajar em 2024...</p>
+            <a href="#">Leia Mais</a>
+        </article>
+        <!-- Adicione mais posts de blog conforme necessário -->
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Nome">
+            <input type="email" placeholder="E-mail">
+            <textarea placeholder="Sua Mensagem"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Redes Sociais -->
+    <footer>
+        <h2>Siga-nos nas Redes Sociais</h2>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <!--<a href="https://www.twitter.com" target="_blank">Twitter</a> por enquanto estamos sem essa opção por o x ter ido de vasco -->
+    </footer>
+
+    <script src="/javascript/script.js"></script>
+</body>
+</html> 
