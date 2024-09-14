@@ -1,0 +1,36 @@
+/* Estilos gerais */
+
+/* Seções */
+section {
+    padding: 20px;
+}
+
+/* Perfis de Guias e Tours */
+.guia-perfil, .tour-perfil {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.login
+.guia-perfil img, .tour-perfil img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Formulários */
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+

@@ -1,0 +1,24 @@
+*               {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+footer {
+
+    background-color: hsl(0, 0%, 85%);
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding: 20px;
+    
+}
+
+footer a {
+
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    margin: 0 10px;
+
+}

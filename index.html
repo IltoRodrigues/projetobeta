@@ -6,42 +6,93 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agência de Turismo</title>
 
-    <!-- LINKS -->
+    <title>Document</title>
 
-    <link rel="stylesheet" href="css/style.css">
-
+    <!-- Links-->
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/back-header.css">
+    <link rel="stylesheet" href="css/back-footer.css">
 
 </head>
 
-<!-- Início -->
+    <!-- INICIO -->
 
-<body>
-
-    <!-- Menu -->     
-
-    <header>
-        
+<header> <!-- Cabeçalho Padrão -->
+     
+    <div class="Back-Header" Id="Back-Header">
+            
         <h1>Bem-vindo à Agência de Turismo</h1>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="#busca">Busca</a></li>
-                <li><a href="guias.html">Perfis de Guias</a></li>
-                <li><a href="tours.html">Perfis de Tours</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="test_Index.html">Cristianorouboupratestar</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </nav>
-        
-    </header>
+        <br>
 
-    <!-- FIM do MENU -->    
+        <!-- MENU PRINCIPAL -->
 
+            <nav class="Menu-Principal" id="Menu-Principal">
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            <span class="icon"><i class="bi bi-house"></i></span>
+                            <span class="txt-link">Home</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#busca">
+                            <span class="icon"><i class="bi bi-house"></i></span>
+                            <span class="txt-link">Login</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="guias.html">
+                            <span class="icon"><i class="bi bi-house"></i></span>
+                            <span class="txt-link">Guias</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="tours.html">
+                            <span class="icon"><i class="bi bi-house"></i></span>
+                            <span class="txt-link">Tours</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#blog">
+                            <span class="icon"><i class="bi bi-house"></i></span>
+                            <span class="txt-link">free</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="bi bi-house"></i></span>
+                            <span class="txt-link">free</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="login.html">
+                            <span class="icon"><i class="bi bi-house"></i></span>
+                            <span class="txt-link">Login</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        <!-- FIM DO MENU PRINCIPAL --> 
+
+    </div> <!-- Back-Header -->
+
+</header> <!--- Cabeçalho Padrão -->
+
+<body>
     <!-- Página Inicial -->
     <section id="home">
         <div class="banner">
@@ -121,16 +172,34 @@
             <button type="submit">Enviar</button>
         </form>
     </section>
-
-    <!-- Redes Sociais -->
-    <footer>
-        <h2>Siga-nos nas Redes Sociais</h2>
-        <a href="https://www.facebook.com" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        <!--<a href="https://www.twitter.com" target="_blank">Twitter</a> por enquanto estamos sem essa opção por o x ter ido de vasco -->
-    </footer>
-
-    <script src="/javascript/script.js"></script>
 </body>
+
+<footer> <!-- Rodapé Padrão -->
+
+    <div class="Back-Footer" Id="Back-Footer"></div>
+
+        <h2>Siga-nos nas Redes Sociais</h2>
+
+        <br>
+
+        <a href="https://www.facebook.com" target="_blank">
+            <span class="icon"><i class="bi bi-house"></i></span>
+            <span class="txt-link">Instagram</span>
+        </a>
+
+        <a href="https://www.instagram.com" target="_blank">
+            <span class="icon"><i class="bi bi-house"></i></span>
+            <span class="txt-link">Facebook</span>
+        </a>
+
+        <a href="https://www.twitter.com" target="_blank">
+            <span class="icon"><i class="bi bi-house"></i></span>
+            <span class="txt-link">Rede Super Mercados</span>
+        </a>
+
+    </div> <!-- Back-Footer -->
+    
+
+</footer> <!-- Rodapé Padrão -->
 
 </html>
