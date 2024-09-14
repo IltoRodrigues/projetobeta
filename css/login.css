@@ -9,6 +9,14 @@ body {
     background-color: #f0f2f5;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    background-image: url('/Media/Img/login.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
 .container {
     display: flex;
     min-height: 100vh;
@@ -28,9 +36,10 @@ body {
 }
 
 .left-section p {
-    font-size: 24px;
-    margin-top: 10px;
-    color: #000;
+    font-size: 30px;
+    margin-top: 25px;
+    color: #ffffff;
+    
 }
 
 .right-section {
