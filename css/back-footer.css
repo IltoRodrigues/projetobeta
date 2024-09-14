@@ -8,8 +8,8 @@
 
 footer {
 
-    background-color: hsl(0, 0%, 85%);
-    color: rgb(255, 0, 0);
+    background-color: #ff8635;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px;
     
@@ -17,7 +17,7 @@ footer {
 
 footer a {
 
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     margin: 0 10px;
 
