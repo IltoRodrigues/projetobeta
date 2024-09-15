@@ -22,40 +22,34 @@
 <header> <!-- Cabeçalho Padrão -->
      
     <div class="Back-Header" Id="Back-Header">
-            
+                    
         <h1>Bem-vindo à Agência de Turismo</h1>
-
+        
         <br>
-
+        
         <!-- MENU PRINCIPAL -->
-
+        
             <nav class="Menu-Principal" id="Menu-Principal">
-
+        
                 <ul>
-
+        
                     <li>
                         <a href="index.html">
                             <span class="icon"><i class="bi bi-house"></i></span>
                             <span class="txt-link">Home</span>
                         </a>
                     </li>
-
-                    <li>
-                        <a href="#busca">
-                            <span class="icon"><i class="bi bi-house"></i></span>
-                            <span class="txt-link">Free</span>
-                        </a>
-                    </li>
-
+        
                     <li>
                         <a href="guias.html">
                             <span class="icon"><i class="bi bi-people"></i></span>
                             <span class="txt-link">Guias</span>
                         </a>
                     </li>
-
+        
                     <li>
                         <a href="tours.html">
+<<<<<<< HEAD
                             <span class="icon"><i class="bi bi-geo-alt"></i></span>
                             <span class="txt-link">Tours</span>
                         </a>
@@ -75,21 +69,49 @@
                         </a>
                     </li>
 
+=======
+                            <span class="icon"><i class="bi bi-house"></i></span>
+                            <span class="txt-link">tours</span>
+                        </a>
+                    </li>
+        
+>>>>>>> ce418e728f1856518e1e4db01d61e9610536eeb8
                     <li>
                         <a href="login.html">
                             <span class="icon"><i class="bi bi-person"></i></span>
                             <span class="txt-link">Login</span>
                         </a>
                     </li>
-
+        
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="bi bi-house"></i></span>
+                            <span class="txt-link">Open</span>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="bi bi-house"></i></span>
+                            <span class="txt-link">Open</span>
+                        </a>
+                    </li>
+        
+                    <li>
+                        <a href="#">
+                            <span class="icon"><i class="bi bi-house"></i></span>
+                            <span class="txt-link">Open</span>
+                        </a>
+                    </li>
+        
                 </ul>
-
+        
             </nav>
-
+        
         <!-- FIM DO MENU PRINCIPAL --> 
-
+        
     </div> <!-- Back-Header -->
-
+        
 </header> <!--- Cabeçalho Padrão -->
 
 <body>
@@ -140,5 +162,25 @@
     
 
 </footer> <!-- Rodapé Padrão -->
+
+    <!-- Scripts -->
+
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Carregar o conteúdo do cabeçalho
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+
+            // Carregar o conteúdo do rodapé
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        });
+</script>
 
 </html>
