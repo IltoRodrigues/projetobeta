@@ -1,34 +1,65 @@
-*               {
-
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+}
+
+body {
+    font-family: 'Arial', sans-serif;
 }
 
 .Back-Header {
-
-    background-color: #ff8635;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 20px;
-    
+    background-color: #afdbff; /* Cor laranja */
+    color: white;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 150px; /* Altura menor para a header */
+    position: relative; /* Para manter o nav dentro */
+    font-size: 24px; /* Tamanho da fonte reduzido */
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center; /* Garante que o texto seja centralizado */
 }
 
-.nav ul {
+.Back-Header h1 {
+    font-size: 32px; /* Tamanho do título */
+    margin: 0;
+}
 
+nav {
+    background-color: #7dc4ffd3; /* Azul vibrante */
+    padding: 10px 0; /* Menor espaçamento interno */
+    text-align: center;
+    border-top: 3px solid #7dc4ffd3; /* Borda laranja para conectar com a header */
+    width: 100%; /* Ocupa toda a largura da tela */
+    position: absolute; /* Fixa o nav na parte inferior da header */
+    bottom: 0;
+    left: 0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Sombra sutil */
+}
+
+nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-
-    display: inline;
-    margin-right: 10px;
+    display: inline-block;
+    margin: 0 15px;
 }
 
 nav ul li a {
-
-    color: rgb(255, 255, 255);
+    color: white;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
