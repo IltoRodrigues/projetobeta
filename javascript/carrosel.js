@@ -23,3 +23,6 @@ function updateSlides() {
 
 // Inicia o carrossel
 updateSlides();
+
+const intervalTime = 3000; // Tempo em milissegundos para trocar de slide (3 segundos)
+setInterval(nextSlide, intervalTime); // Passa automaticamente para o próximo slide a cada intervalo definido
