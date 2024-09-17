@@ -1,0 +1,48 @@
+/* Estilos para o carrossel */
+.carrossel-container {
+    position: relative; /* Define o container como relativo para que os botões possam ser posicionados */
+    max-width: 100%; /* Define a largura máxima do carrossel */
+    margin: auto; /* Centraliza o carrossel na página */
+}
+
+.carrossel {
+    display: flex; /* Define o layout dos slides como flexível */
+    overflow: hidden; /* Oculta as imagens fora da área visível */
+    width: 100%; /* Define a largura do carrossel */
+}
+
+.slide {
+    min-width: 100%; /* Cada slide ocupa 100% da largura */
+    transition: transform 0.5s ease; /* Animação suave ao mover os slides */
+}
+
+.slide img {
+    width: 100%; /* Imagens ocupam toda a largura do slide */
+}
+
+.prev, .next {
+    cursor: pointer; /* Altera o cursor ao passar sobre os botões */
+    position: absolute; /* Botões posicionados relativamente ao container */
+    top: 50%; /* Centraliza verticalmente */
+    width: auto; /* Largura automática */
+    padding: 16px; /* Espaçamento interno dos botões */
+    margin-top: -22px; /* Ajuste de posição vertical */
+    color: white; /* Cor do texto (setas) */
+    font-weight: bold; /* Texto em negrito */
+    font-size: 18px; /* Tamanho da fonte */
+    border-radius: 0 3px 3px 0; /* Arredondamento dos cantos */
+    user-select: none; /* Impede seleção do texto */
+}
+
+.next {
+    right: 0; /* Botão "Próximo" posicionado à direita */
+    border-radius: 3px 0 0 3px; /* Arredonda os cantos à esquerda */
+}
+
+.prev {
+    left: 0; /* Botão "Anterior" posicionado à esquerda */
+}
+
+.prev:hover, .next:hover {
+    background-color: #7dc4ffd3; /* Fundo mais escuro ao passar o mouse */
+}

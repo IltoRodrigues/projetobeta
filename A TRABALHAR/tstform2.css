@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif; /*TIPO DE FONTE UTILIZADA NO CORPO DA PÁGINA*/
+    margin: 20px; /*MARGEM AO REDOR DO CONTEÚDO DA PÁGINA*/
+}
+
+h1, h2 {
+    color: #333; /*COR DO TEXTO DOS TÍTULOS (CINZA ESCURO)*/
+}
+
+.review-form, .reviews {
+    margin-top: 30px; /*ESPAÇAMENTO SUPERIOR ENTRE O FORMULÁRIO E AS AVALIAÇÕES*/
+}
+
+.review-form label {
+    display: block; /*FAZ O LABEL OCUPAR A LARGURA TOTAL DISPONÍVEL*/
+    margin-bottom: 5px; /*ESPAÇAMENTO INFERIOR ENTRE O LABEL E O CAMPO*/
+    font-weight: bold; /*TEXTO EM NEGRITO NOS LABELS*/
+}
+
+.review-form input[type="text"],
+.review-form select,
+.review-form textarea {
+    width: 100%; /*OCUPA 100% DA LARGURA DISPONÍVEL*/
+    padding: 8px; /*ESPAÇAMENTO INTERNO DOS CAMPOS*/
+    margin-bottom: 15px; /*ESPAÇAMENTO INFERIOR ENTRE OS CAMPOS*/
+    border: 1px solid #ccc; /*BORDA DOS CAMPOS COM COR CINZA CLARO*/
+    border-radius: 4px; /*ARREDONDAMENTO DAS BORDAS DOS CAMPOS*/
+}
+
+.review-form button {
+    padding: 10px 20px; /*ESPAÇAMENTO INTERNO VERTICAL E HORIZONTAL DO BOTÃO*/
+    background-color: #7dc4ffd3; /*COR DE FUNDO DO BOTÃO*/
+    color: white; /*COR DO TEXTO DO BOTÃO (BRANCO)*/
+    border: none; /*REMOVE A BORDA PADRÃO DO BOTÃO*/
+    border-radius: 4px; /*ARREDONDAMENTO DOS CANTOS DO BOTÃO*/
+    cursor: pointer; /*CURSOR EM FORMA DE PONTEIRO QUANDO PASSA SOBRE O BOTÃO*/
+}
+
+.review-form button:hover {
+    background-color: #005bb5; /*COR DE FUNDO DO BOTÃO AO PASSAR O MOUSE (HOVER)*/
+}
+
+.review {
+    border-bottom: 1px solid #ccc; /*LINHA SEPARANDO AS AVALIAÇÕES*/
+    padding: 15px 0; /*ESPAÇAMENTO VERTICAL DENTRO DE CADA AVALIAÇÃO*/
+}
+
+.review:last-child {
+    border-bottom: none; /*REMOVE A BORDA INFERIOR DA ÚLTIMA AVALIAÇÃO*/
+}
+
+.review .review-name {
+    font-weight: bold; /*NOME DO AVALIADOR EM NEGRITO*/
+    margin-bottom: 5px; /*ESPAÇAMENTO INFERIOR ENTRE O NOME E A PRÓXIMA LINHA*/
+}
+
+.review .review-rating {
+    color: #ffcc00; /*COR DAS ESTRELAS DA AVALIAÇÃO (DOURADO)*/
+    margin-bottom: 10px; /*ESPAÇAMENTO INFERIOR ENTRE A NOTA E O COMENTÁRIO*/
+}
+
+.review .review-comment {
+    font-style: italic; /*COMENTÁRIO DO AVALIADOR EM ITÁLICO*/
+}

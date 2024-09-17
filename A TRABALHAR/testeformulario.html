@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Avaliações</title>
+    <link rel="stylesheet" href="testeformulario.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Deixe sua Avaliação</h1>
+        <!-- Teste para tentar implementar sistema de avaliações funcional-->
+
+        <!-- Formulário de Avaliação -->
+        <form id="avaliacaoForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+            <label for="comentario">Comentário:</label>
+            <textarea id="comentario" placeholder="Deixe seu comentário" required></textarea>
+
+            <label for="nota">Nota:</label>
+            <div class="rating">
+                <input type="radio" name="nota" id="estrela5" value="5"><label for="estrela5">★★★★★</label>
+                <input type="radio" name="nota" id="estrela4" value="4"><label for="estrela4">★★★★</label>
+                <input type="radio" name="nota" id="estrela3" value="3"><label for="estrela3">★★★</label>
+                <input type="radio" name="nota" id="estrela2" value="2"><label for="estrela2">★★</label>
+                <input type="radio" name="nota" id="estrela1" value="1"><label for="estrela1">★</label>
+            </div>
+
+            <button type="submit">Enviar Avaliação</button>
+        </form>
+
+        <!-- Exibir Avaliações -->
+        <div id="avaliacoes">
+            <h2>Avaliações dos Usuários</h2>
+            <!-- As avaliações inseridas serão mostradas aqui -->
+        </div>
+    </div>
+
+    <script src="testeformulario.js"></script>
+</body>
+
+</html>

@@ -10,93 +10,107 @@
     <title>Document</title>
 
     <!-- Links-->
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/Back-Header.css">
-    <link rel="stylesheet" href="css/Back-Footer.css">
+    <link rel="stylesheet" href="CSS/back-header.css">
+    <link rel="stylesheet" href="CSS/Back-Footer.css">
+    <link rel="stylesheet" href="CSS/carrosel.css"> <!-- Estilos para o carrossel -->
 
 </head>
 
-    <!-- INICIO -->
+<!-- INICIO -->
 
 <header> <!-- Cabeçalho Padrão -->
-     
+
     <div class="Back-Header" Id="Back-Header">
-                                  
+
         <h1>Bem-vindo à Agência de Turismo</h1>
-        <br>        
-    
+        <br>
+
         <!-- MENU PRINCIPAL -->
-    
-            <nav class="Menu-Principal" id="Menu-Principal">
-    
-                <ul>
-    
-                    <li>
-                        <a href="index.html">
-                            <span class="icon"><i class="bi bi-house"></i></span>
-                            <span class="txt-link">Home</span>
-                        </a>
-                    </li>
 
-                    <li>
-                        <a href="guias.html">
-                            <span class="icon"><i class="bi bi-people"></i></span>
-                            <span class="txt-link">Guias</span>
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="tours.html">
-                            <span class="icon"><i class="bi bi-geo-alt"></i></span>
-                            <span class="txt-link">Tours</span>
-                        </a>
-                    </li>
+        <nav class="Menu-Principal" id="Menu-Principal">
 
-                    <li>
-                        <a href="login.html">
-                            <span class="icon"><i class="bi bi-person"></i></span>
-                            <span class="txt-link">Login</span>
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="#">
-                            <span class="icon"><i class="bi bi-house"></i></span>
-                            <span class="txt-link">Open</span>
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="#">
-                            <span class="icon"><i class="bi bi-house"></i></span>
-                            <span class="txt-link">Open</span>
-                        </a>
-                    </li>
-    
-                    <li>
-                        <a href="#">
-                            <span class="icon"><i class="bi bi-house"></i></span>
-                            <span class="txt-link">Open</span>
-                        </a>
-                    </li>
-    
-                </ul>
-    
-            </nav>
-    
-        <!-- FIM DO MENU PRINCIPAL --> 
-    
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        <span class="icon"><i class="bi bi-house"></i></span>
+                        <span class="txt-link">Home</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="guias.html">
+                        <span class="icon"><i class="bi bi-people"></i></span>
+                        <span class="txt-link">Guias</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tours.html">
+                        <span class="icon"><i class="bi bi-geo-alt"></i></span>
+                        <span class="txt-link">Tours</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="login.html">
+                        <span class="icon"><i class="bi bi-person"></i></span>
+                        <span class="txt-link">Login</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-house"></i></span>
+                        <span class="txt-link">Open</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-house"></i></span>
+                        <span class="txt-link">Open</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-house"></i></span>
+                        <span class="txt-link">Open</span>
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <!-- FIM DO MENU PRINCIPAL -->
+
     </div> <!-- Back-Header -->
-    
+
 </header> <!--- Cabeçalho Padrão -->
 
 <body>
+    <!-- Carrossel giratório -->
+    <section class="carrossel-container">
+        <div class="carrossel">
+            <div class="slide"><img src="Media/Img/paisagem.jpg" alt="Tour 1"></div>
+            <div class="slide"><img src="Media/Img/image1_0.jpg" alt="Tour 2"></div>
+            <div class="slide"><img src="#" alt="Tour 3"></div>
+            <div class="slide"><img src="#" alt="Tour 4"></div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </section>
 
     <!--- Bot teste/obvio que vou excluir -->
-    <script>(function(w, d) { w.CollectId = "66e6e134c7ec3e97bdf8a78d"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); 
-    s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); 
-    h.appendChild(s); })(window, document);</script>
+    <script>(function (w, d) {
+            w.CollectId = "66e6e134c7ec3e97bdf8a78d"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script");
+            s.setAttribute("type", "text/javascript"); s.async = true; s.setAttribute("src", "https://collectcdn.com/launcher.js");
+            h.appendChild(s);
+        })(window, document);</script>
     <!--- Bot teste/obvio que vou excluir -->
 
     <!-- Página Inicial -->
@@ -184,28 +198,31 @@
 
     <div class="Back-Footer" Id="Back-Footer"></div>
 
-        <h2>Siga-nos nas Redes Sociais</h2>
+    <h2>Siga-nos nas Redes Sociais</h2>
 
-        <br>
+    <br>
 
-        <a href="https://www.facebook.com" target="_blank">
-            <span class="icon"><i class="bi bi-facebook"></i></span>
-            <span class="txt-link">Facebook</span>
-        </a>
+    <a href="https://www.facebook.com" target="_blank">
+        <span class="icon"><i class="bi bi-facebook"></i></span>
+        <span class="txt-link">Facebook</span>
+    </a>
 
-        <a href="https://www.instagram.com" target="_blank">
-            <span class="icon"><i class="bi bi-instagram"></i></span>
-            <span class="txt-link">Instagram</span>
-        </a>
+    <a href="https://www.instagram.com" target="_blank">
+        <span class="icon"><i class="bi bi-instagram"></i></span>
+        <span class="txt-link">Instagram</span>
+    </a>
 
-        <a href="https://www.twitter.com" target="_blank">
-            <span class="icon"><i class="bi bi-twitter"></i></span>
-            <span class="txt-link">Rede Super Mercados</span>
-        </a>
+    <a href="https://www.twitter.com" target="_blank">
+        <span class="icon"><i class="bi bi-twitter"></i></span>
+        <span class="txt-link">Rede Super Mercados</span>
+    </a>
 
     </div> <!-- Back-Footer -->
-    
+
 
 </footer> <!-- Rodapé Padrão -->
+
+<!-- Link para o JavaScript -->
+<script src="javascript/carrosel.js"></script>
 
 </html>

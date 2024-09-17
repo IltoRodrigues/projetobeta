@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Avaliações</title>
+    <link rel="stylesheet" href="tstform2.css">
+</head>
+
+<body>
+    <h1>Avalie o Produto</h1>
+
+    <div class="review-form">
+        <h2>Deixe sua Avaliação</h2>
+        <form id="reviewForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+
+            <label for="rating">Nota:</label>
+            <select id="rating" required>
+                <option value="">Selecione</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="1">⭐</option>
+            </select>
+
+            <label for="comment">Comentário:</label>
+            <textarea id="comment" rows="5" required></textarea>
+
+            <button type="submit">Enviar Avaliação</button>
+        </form>
+    </div>
+
+    <div class="reviews">
+        <h2>Avaliações dos Usuários</h2>
+        <div id="reviewsContainer">
+            <!-- As avaliações serão inseridas aqui -->
+        </div>
+    </div>
+
+    <script src="tstform2.js"></script>
+</body>
+
+</html>

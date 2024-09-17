@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    /*TIPO DE FONTE*/
+    background-color: #f4f4f4;
+    /*COR DE FUNDO DA PÁGINA*/
+    margin: 0;
+    /*REMOVE MARGEM PADRÃO*/
+    padding: 0;
+    /*REMOVE PADDING PADRÃO*/
+}
+
+.container {
+    width: 80%;
+    /*TAMANHO DA LARGURA DO CONTAINER*/
+    margin: 50px auto;
+    /*ESPAÇAMENTO VERTICAL E CENTRALIZAÇÃO HORIZONTAL*/
+    background-color: white;
+    /*COR DE FUNDO DO CONTAINER*/
+    padding: 20px;
+    /*ESPAÇAMENTO INTERNO DO CONTAINER*/
+    border-radius: 5px;
+    /*ARREDONDAMENTO DOS CANTOS DO CONTAINER*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /*SOMBRA AO REDOR DO CONTAINER*/
+}
+
+h1,
+h2 {
+    color: #333;
+    /*COR DO TEXTO DOS TÍTULOS*/
+}
+
+label {
+    display: block;
+    /*FAZ O LABEL OCUPAR A LARGURA TOTAL DISPONÍVEL*/
+    margin: 10px 0 5px;
+    /*ESPAÇAMENTO ENTRE O LABEL E OUTROS ELEMENTOS*/
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    /*OCUPA 100% DA LARGURA DISPONÍVEL*/
+    padding: 10px;
+    /*ESPAÇAMENTO INTERNO DENTRO DOS CAMPOS*/
+    margin-bottom: 10px;
+    /*ESPAÇAMENTO INFERIOR ENTRE OS CAMPOS*/
+    border: 1px solid #ccc;
+    /*BORDA DOS CAMPOS COM COR CINZA CLARO*/
+    border-radius: 4px;
+    /*ARREDONDAMENTO DOS CANTOS DOS CAMPOS*/
+}
+
+textarea {
+    height: 100px;
+    /*ALTURA DEFINIDA PARA O CAMPO DE TEXTO*/
+}
+
+.rating {
+    direction: rtl;
+    /*DIREÇÃO DA LEITURA DA DIREITA PARA ESQUERDA (PARA ESTRELAS)*/
+    unicode-bidi: bidi-override;
+    /*FORÇA O COMPORTAMENTO BIDIRECIONAL*/
+    text-align: left;
+    /*ALINHA O TEXTO À ESQUERDA*/
+}
+
+.rating input {
+    display: none;
+    /*ESCONDE OS INPUTS DE RADIO (OS BOTÕES DE SELEÇÃO)*/
+}
+
+.rating label {
+    font-size: 2em;
+    /*TAMANHO DAS ESTRELAS DE AVALIAÇÃO*/
+    color: #ddd;
+    /*COR DAS ESTRELAS NÃO SELECIONADAS (CINZA)*/
+    cursor: pointer;
+    /*APARÊNCIA DE CURSOR COMO PONTEIRO AO PASSAR SOBRE AS ESTRELAS*/
+}
+
+.rating input:checked~label {
+    color: gold;
+    /*TROCA A COR DAS ESTRELAS SELECIONADAS PARA DOURADO*/
+}
+
+.rating label:hover,
+.rating label:hover~label {
+    color: gold;
+    /*TROCA A COR DAS ESTRELAS AO PASSAR O MOUSE SOBRE ELAS (HOVER)*/
+}
+
+button {
+    background-color: #7dc4ffd3;
+    /*COR DO BOTÃO*/
+    color: white;
+    /*COR DO TEXTO DENTRO DO BOTÃO*/
+    padding: 10px;
+    /*ESPAÇAMENTO INTERNO DO BOTÃO*/
+    border: none;
+    /*REMOVE A BORDA PADRÃO DO BOTÃO*/
+    cursor: pointer;
+    /*CURSOR COMO PONTEIRO QUANDO PASSA SOBRE O BOTÃO*/
+    width: 100%;
+    /*LARGURA TOTAL PARA O BOTÃO*/
+}
+
+button:hover {
+    background-color: #005bb5;
+    /*COR DO BOTÃO QUANDO O MOUSE PASSA SOBRE ELE*/
+}
+
+#avaliacoes {
+    margin-top: 30px;
+    /*ESPAÇAMENTO SUPERIOR ENTRE O FORMULÁRIO E AS AVALIAÇÕES*/
+}
+
+.avaliacao {
+    background-color: #f9f9f9;
+    /*COR DE FUNDO DE CADA AVALIAÇÃO*/
+    padding: 10px;
+    /*ESPAÇAMENTO INTERNO DAS AVALIAÇÕES*/
+    margin-bottom: 10px;
+    /*ESPAÇAMENTO INFERIOR ENTRE AS AVALIAÇÕES*/
+    border-left: 5px solid #7dc4ffd3;
+    /*BARRA LATERAL COLORIDA NAS AVALIAÇÕES*/
+}
+
+.avaliacao p {
+    margin: 0;
+    /*REMOVE MARGEM PADRÃO DOS PARÁGRAFOS DENTRO DA AVALIAÇÃO*/
+}
+
+.avaliacao .nota {
+    font-size: 1.5em;
+    /*TAMANHO DA FONTE DAS ESTRELAS NA AVALIAÇÃO*/
+    color: gold;
+    /*COR DAS ESTRELAS EXIBIDAS NA AVALIAÇÃO*/
+}
